@@ -42,5 +42,5 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.4.0'
 
     //Libreria menu principal
-    implementation 'com.etebarian:meow-bottom-navigation:1.0.0'
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
 }

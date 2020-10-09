@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.UsuarioFragment">
+    tools:context=".fragments.ProductFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/Appbar"
@@ -12,29 +12,16 @@
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:orientation="horizontal"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="15dp"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="@string/usuarios"
-                android:textColor="@android:color/white"
-                android:textSize="@dimen/text3"
-                android:textStyle="bold" />
-
-            <SearchView
-                android:id="@+id/search_product"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
-        </LinearLayout>
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/productos"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text3"
+            android:textStyle="bold" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
@@ -48,18 +35,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="@string/usuarios_registrados"
             android:layout_marginBottom="5dp"
-            android:padding="10dp" />
+            android:padding="10dp"
+            android:text="@string/productos_registrados" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipeUsers"
+            android:id="@+id/swipeProduct"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcUser"
+                android:id="@+id/rcProduct"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

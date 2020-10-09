@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_iconColor="@color/colorPrimary">
+
+    <item
+        android:id="@+id/navigation_users"
+        android:icon="@drawable/ic_usuarios_24dp"
+        android:title="@string/usuarios" />
+
+    <item
+        android:id="@+id/navigation_employees"
+        android:icon="@drawable/ic_empleados_24dp"
+        android:title="@string/empleados" />
+
+    <item
+        android:id="@+id/navigation_products"
+        android:icon="@drawable/ic_productos_24dp"
+        android:title="@string/productos" />
+
+    <item
+        android:id="@+id/navigation_report_sale"
+        android:icon="@drawable/ic_ventas_24dp"
+        android:title="@string/reporte_ventas" />
+</menu>
