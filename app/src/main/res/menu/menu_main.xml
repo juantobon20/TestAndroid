@@ -12,9 +12,4 @@
         android:id="@+id/navigation_ventas"
         android:icon="@drawable/ic_ventas"
         android:title="@string/ventas" />
-
-    <item
-        android:id="@+id/navigation_report_sale"
-        android:icon="@drawable/ic_ventas_24dp"
-        android:title="@string/reporte_ventas" />
 </menu>

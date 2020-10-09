@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         main_container.adapter = MainAdapter(supportFragmentManager)
-        main_container.offscreenPageLimit = 4
+        main_container.offscreenPageLimit = 2
         this.InitFragments()
     }
 
@@ -30,9 +30,7 @@ class MainActivity : AppCompatActivity() {
 
                 when (this.currentId) {
                     R.id.navigation_users -> main_container.currentItem = 0
-                    R.id.navigation_employees -> main_container.currentItem = 1
-                    R.id.navigation_products -> main_container.currentItem = 2
-                    R.id.navigation_report_sale -> main_container.currentItem = 3
+                    R.id.navigation_ventas -> main_container.currentItem = 1
                 }
             }
         }
