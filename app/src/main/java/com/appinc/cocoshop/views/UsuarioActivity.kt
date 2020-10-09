@@ -3,28 +3,40 @@ package com.appinc.cocoshop.views
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toolbar
-import com.appinc.cocoshop.App
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import com.appinc.cocoshop.R
-import com.appinc.cocoshop.models.Login
+import com.appinc.cocoshop.databinding.ActivityUsuarioBinding
 import com.appinc.cocoshop.tools.HideKeyBoard
+import com.appinc.cocoshop.tools.MsgBox
+import com.appinc.cocoshop.viewModels.UsuarioVM
 import kotlinx.android.synthetic.main.activity_usuario.*
 
 class UsuarioActivity : AppCompatActivity() {
-
-    private lateinit var login: Login
 
     private var isModify: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_usuario)
+
+        val viewModel = ViewModelProviders.of(this).get(UsuarioVM::class.java)
+        DataBindingUtil.setContentView<ActivityUsuarioBinding>(this, R.layout.activity_usuario)
+            .apply {
+                this.lifecycleOwner = this@UsuarioActivity
+                this.viewModel = viewModel
+            }
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setActionBar(toolbar)
-
         this.isModify =
             if (intent != null && intent.extras != null) intent.extras?.getBoolean("IsModify")!! else false
         title = getString(if (this.isModify) R.string.modificar_usuario else R.string.crear_usuario)
+
+        viewModel.init(this, this.isModify)
+        viewModel.GetIsFinish().observe(this, {
+            if (it)
+                MsgBox(this).Msg(if (this.isModify) "Modificado correctamente" else "Guardado correctamente", "", true)
+        })
 
         layout.setOnTouchListener { v, _ ->
             if (txtNombre.isFocused) {
@@ -55,27 +67,5 @@ class UsuarioActivity : AppCompatActivity() {
             v.performClick()
             return@setOnTouchListener true
         }
-
-        if (this.isModify) this.WriteDataModify()
-    }
-
-    private fun WriteDataModify() {
-        if (App.loginModify == null) return
-
-        this.login = App.loginModify!!
-        txtNombre.setText(this.login.usuario.nombre)
-        txtApellido.setText(this.login.usuario.apellido)
-        txtTelefono.setText(this.login.usuario.telefono)
-        txtDireccion.setText(this.login.usuario.direccion)
-        txtUser.setText(this.login.userName)
-        txtUser.isEnabled = false
-        txtPass.setText(this.login.password)
-        txtPass.isEnabled = false
-
-        if (this.login.usuario.tipo == 1) rbEmpleado.isChecked = true
-        else rbUsuario.isChecked = true
-        if (this.login.estado) rbActivo.isChecked = true
-        else rbInactivo.isChecked = true
-
     }
 }

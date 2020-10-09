@@ -2,10 +2,10 @@ package com.appinc.cocoshop.models
 
 class Usuario {
 
-    val id: Int = 0
-    val nombre: String = "JUAN"
-    val apellido: String = "TOBON"
-    val direccion: String = ""
-    val telefono: String = ""
-    val tipo: Int = 0
+    var id: Int = 0
+    var nombre: String = "JUAN"
+    var apellido: String = "TOBON"
+    var direccion: String = ""
+    var telefono: String = ""
+    var tipo: Int = 0
 }

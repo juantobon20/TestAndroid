@@ -32,4 +32,7 @@
     <string name="ventas">Ventas</string>
     <string name="crear_documento">Crear documento</string>
     <string name="total">Total</string>
+    <string name="abonos">Abonos</string>
+    <string name="valor_total">Valor total: %1$s</string>
+    <string name="agregar_item">Agregar item</string>
 </resources>
