@@ -41,4 +41,6 @@
     <string name="valor_abono">Valor abono</string>
     <string name="cancelar">Cancelar</string>
     <string name="deslice_la_pantalla_hacia_abajo_para_consultar">Deslice la pantalla hacia abajo para consultar</string>
+    <string name="admin">Admin</string>
+    <string name="_12345678">12345678</string>
 </resources>

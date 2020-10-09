@@ -33,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="15"
+            android:text="@string/admin"
             android:inputType="textPersonName"
             android:maxLines="1" />
 
@@ -49,17 +50,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="15"
+            android:text="@string/_12345678"
             android:inputType="textPassword"
             android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
-    <CheckBox
-        android:id="@+id/cbRecordarme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="17"
-        android:text="@string/recordarme" />
 
     <Button
         android:id="@+id/btnIngresar"
