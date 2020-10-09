@@ -1,5 +1,6 @@
 package com.appinc.cocoshop.views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.appinc.cocoshop.R
@@ -17,6 +18,14 @@ class MainActivity : AppCompatActivity() {
         main_container.adapter = MainAdapter(supportFragmentManager)
         main_container.offscreenPageLimit = 2
         this.InitFragments()
+
+        btnAdd.setOnClickListener {
+            if (main_container.currentItem == 0)
+                startActivity(Intent(this, UsuarioActivity::class.java))
+            else
+                startActivity(Intent(this, VentasActivity::class.java))
+
+        }
     }
 
     private fun InitFragments() {

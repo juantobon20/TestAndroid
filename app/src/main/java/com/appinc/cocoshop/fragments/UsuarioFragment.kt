@@ -63,14 +63,6 @@ class UsuarioFragment : Fragment() {
             lblRegs.text = getString(R.string.usuarios_registrados, it.size.toString())
         })
 
-        (activity as MainActivity).btnAdd.setOnClickListener {
-            startActivity(
-                Intent(
-                    context,
-                    UsuarioActivity::class.java
-                )
-            )
-        }
         return this.root
     }
 }

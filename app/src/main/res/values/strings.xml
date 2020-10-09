@@ -35,4 +35,5 @@
     <string name="abonos">Abonos</string>
     <string name="valor_total">Valor total: %1$s</string>
     <string name="agregar_item">Agregar item</string>
+    <string name="ventas_registradas">Ventas registradas: %1$s</string>
 </resources>
