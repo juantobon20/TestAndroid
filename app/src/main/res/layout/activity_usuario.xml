@@ -112,7 +112,7 @@
                         style="@style/editTextWhile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textPersonName"
+                        android:inputType="number"
                         android:maxLines="1"
                         android:text="@={viewModel.telefono}" />
 
@@ -129,8 +129,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="@{()-> viewModel.onCheckTipo(true,1)}"
                         android:checked="@{viewModel.isEmployee}"
+                        android:onClick="@{()-> viewModel.onCheckTipo(true,1)}"
                         android:text="@string/es_empleado" />
 
                     <RadioButton
@@ -138,8 +138,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="@{()-> viewModel.onCheckTipo(false,1)}"
                         android:checked="@{!viewModel.isEmployee}"
+                        android:onClick="@{()-> viewModel.onCheckTipo(false,1)}"
                         android:text="@string/es_cliente" />
                 </RadioGroup>
 
@@ -200,8 +200,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:onClick="@{()-> viewModel.onCheckTipo(true,2)}"
                         android:checked="@{viewModel.isActivo}"
+                        android:onClick="@{()-> viewModel.onCheckTipo(true,2)}"
                         android:text="@string/activo" />
 
                     <RadioButton

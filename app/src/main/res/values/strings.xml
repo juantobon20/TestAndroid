@@ -36,4 +36,9 @@
     <string name="valor_total">Valor total: %1$s</string>
     <string name="agregar_item">Agregar item</string>
     <string name="ventas_registradas">Ventas registradas: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="valor_abono">Valor abono</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="deslice_la_pantalla_hacia_abajo_para_consultar">Deslice la pantalla hacia abajo para consultar</string>
 </resources>

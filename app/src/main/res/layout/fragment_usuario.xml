@@ -29,11 +29,6 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/text3"
                 android:textStyle="bold" />
-
-            <SearchView
-                android:id="@+id/search_product"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -50,7 +45,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:padding="10dp"
-            android:text="@string/buscando" />
+            android:text="@string/deslice_la_pantalla_hacia_abajo_para_consultar" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/swipeUsers"

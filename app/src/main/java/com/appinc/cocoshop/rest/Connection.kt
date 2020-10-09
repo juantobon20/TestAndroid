@@ -1,6 +1,7 @@
 package com.appinc.cocoshop.rest
 
 import android.os.StrictMode
+import com.appinc.cocoshop.interfaces.IAbono
 import com.appinc.cocoshop.interfaces.IDocumento
 import com.appinc.cocoshop.interfaces.ILogin
 import okhttp3.OkHttpClient
@@ -26,4 +27,5 @@ class Connection {
 
     val iLogin = this.createService(ILogin::class.java)
     val iDocumento = this.createService(IDocumento::class.java)
+    val iAbono = this.createService(IAbono::class.java)
 }
