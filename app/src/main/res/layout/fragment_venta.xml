@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ProductFragment">
+    tools:context=".fragments.VentaFragment">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/Appbar"
@@ -37,16 +37,16 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:padding="10dp"
-            android:text="@string/productos_registrados" />
+            android:text="@string/buscando" />
 
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-            android:id="@+id/swipeProduct"
+            android:id="@+id/swipeVentas"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rcProduct"
+                android:id="@+id/rcVentas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

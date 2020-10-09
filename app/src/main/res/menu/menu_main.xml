@@ -9,14 +9,9 @@
         android:title="@string/usuarios" />
 
     <item
-        android:id="@+id/navigation_employees"
-        android:icon="@drawable/ic_empleados_24dp"
-        android:title="@string/empleados" />
-
-    <item
-        android:id="@+id/navigation_products"
-        android:icon="@drawable/ic_productos_24dp"
-        android:title="@string/productos" />
+        android:id="@+id/navigation_ventas"
+        android:icon="@drawable/ic_ventas"
+        android:title="@string/ventas" />
 
     <item
         android:id="@+id/navigation_report_sale"

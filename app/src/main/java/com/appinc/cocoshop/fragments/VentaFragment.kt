@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.appinc.cocoshop.R
 
-class ProductFragment : Fragment() {
+class VentaFragment : Fragment() {
 
     companion object {
-        private var instance: ProductFragment? = null
-        fun GetInstance() : ProductFragment{
-            if (instance == null) instance = ProductFragment()
+        private var instance: VentaFragment? = null
+        fun GetInstance() : VentaFragment{
+            if (instance == null) instance = VentaFragment()
             return instance!!
         }
     }
@@ -22,6 +22,6 @@ class ProductFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_product, container, false)
+        return inflater.inflate(R.layout.fragment_venta, container, false)
     }
 }

@@ -32,6 +32,7 @@
             style="@style/editTextWhile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="15"
             android:inputType="textPersonName"
             android:maxLines="1" />
 
@@ -47,6 +48,7 @@
             style="@style/editTextWhile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="15"
             android:inputType="textPassword"
             android:maxLines="1" />
 

@@ -15,4 +15,21 @@
 
     <string name="usuarios_registrados">Usuarios registrados: %1$s</string>
     <string name="productos_registrados">Productos registrados: %1$s</string>
+    <string name="buscando">Buscando</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="datos_usuario">Datos usuario</string>
+    <string name="datos_ingreso">Datos ingreso</string>
+    <string name="guardar">Guardar</string>
+    <string name="crear_usuario">Crear usuario</string>
+    <string name="modificar_usuario">Modificar usuario</string>
+    <string name="es_empleado">Es empleado</string>
+    <string name="es_cliente">Es cliente</string>
+    <string name="activo">Activo</string>
+    <string name="inactivo">Inactivo</string>
+    <string name="ventas">Ventas</string>
+    <string name="crear_documento">Crear documento</string>
+    <string name="total">Total</string>
 </resources>

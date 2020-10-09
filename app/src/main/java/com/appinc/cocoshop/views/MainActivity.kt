@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun InitFragments() {
         this.currentId = R.id.navigation_users
-        bottomNavigation.setMenuResource(R.menu.menu_main_employee)
+        bottomNavigation.setMenuResource(R.menu.menu_main)
         bottomNavigation.setItemSelected(R.id.navigation_users)
 
         bottomNavigation.setOnItemSelectedListener {
